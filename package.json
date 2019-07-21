@@ -4,21 +4,21 @@
     "description": "The 20-20-20 Rule Extension for VSCode",
     "version": "0.0.1",
     "publisher": "ndonadoni",
-    "repository": "https://github.com/nicoladonadoni/The-20-20-20-Rule-VSCode",
+    "repository": "https://github.com/nicoladonadoni/vscode-20-20-20-rule",
     "engines": {
-        "vscode": "^1.34.0"
+        "vscode": "^1.36.0"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.start-20-20-20-rule"
+        "onCommand:extension.start-20-20-20"
     ],
     "main": "./dist/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "extension.start-20-20-20-rule",
+                "command": "extension.start-20-20-20",
                 "title": "Start the 20-20-20 rule"
             }
         ]

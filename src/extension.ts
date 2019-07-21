@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    const disposable = vscode.commands.registerCommand('extension.the-20-20-20-rule', () => {
+    const disposable = vscode.commands.registerCommand('extension.start-20-20-20', () => {
         let interval = setInterval(showMessage, 20 * 60 * 1000);
 
         async function showMessage() {
