@@ -1,0 +1,36 @@
+{
+    "name": "vscode-20-20-20-rule",
+    "displayName": "The 20-20-20 Rule",
+    "description": "The 20-20-20 Rule Extension for VSCode",
+    "version": "0.0.1",
+    "publisher": "ndonadoni",
+    "repository": "https://github.com/nicoladonadoni/The-20-20-20-Rule-VSCode",
+    "engines": {
+        "vscode": "^1.34.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.start-20-20-20-rule"
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.start-20-20-20-rule",
+                "title": "Start the 20-20-20 rule"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^12.6.8",
+        "@types/vscode": "^1.36.0",
+        "typescript": "^3.5.3"
+    }
+}
