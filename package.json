@@ -1,10 +1,10 @@
 {
     "name": "vscode-20-20-20-rule",
-    "displayName": "The 20-20-20 Rule",
-    "description": "The 20-20-20 Rule Extension for VSCode",
+    "displayName": "Ergo",
+    "description": "Ergonomic tools for healthier working.",
     "version": "0.0.1",
-    "publisher": "ndonadoni",
-    "repository": "https://github.com/nicoladonadoni/vscode-20-20-20-rule",
+    "publisher": "SamCoding",
+    "repository": "https://github.com/s4m-mo/vscode-ergo",
     "engines": {
         "vscode": "^1.36.0"
     },
@@ -12,17 +12,9 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.start-20-20-20"
+        "*"
     ],
     "main": "./dist/extension.js",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.start-20-20-20",
-                "title": "Start the 20-20-20 rule"
-            }
-        ]
-    },
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
